@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #26111B;
+    background-color: #FFF9FB;
+  }
+
+  /* Custom vibrant scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FFF0F5;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #E91E63;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C2185B;
+  }
+}
+
+@layer utilities {
+  .text-glam-gradient {
+    background: linear-gradient(135deg, #FF1493 0%, #E91E63 40%, #FFB300 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #FFD700 0%, #FFF59D 45%, #FFA000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .text-pink-gradient {
+    background: linear-gradient(135deg, #FF007F 0%, #FF1493 50%, #C2185B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-glam-mesh {
+    background-image: radial-gradient(rgba(233, 30, 99, 0.08) 1px, transparent 0), radial-gradient(rgba(255, 215, 0, 0.06) 1px, transparent 0);
+    background-size: 24px 24px, 36px 36px;
+    background-position: 0 0, 12px 12px;
+  }
+
+  .bg-dark-glam {
+    background-image: radial-gradient(rgba(255, 20, 147, 0.15) 1px, transparent 0), radial-gradient(rgba(255, 215, 0, 0.12) 1px, transparent 0);
+    background-size: 28px 28px, 42px 42px;
+  }
+}
+
+/* Glassmorphism effects */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 182, 193, 0.7);
+}
+
+.glass-panel-dark {
+  background: rgba(45, 0, 23, 0.92);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+}
+
+/* Luxury card hover glow */
+.luxury-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -10px rgba(233, 30, 99, 0.25), 0 10px 25px -4px rgba(255, 215, 0, 0.2);
+}
+
+/* Flashy vibrant button styling with unmistakable visibility */
+.btn-flashy-pink {
+  background: linear-gradient(135deg, #FF1493 0%, #E91E63 50%, #C2185B 100%);
+  color: #FFFFFF !important;
+  font-weight: 700;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 18px rgba(255, 20, 147, 0.45);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-flashy-pink:hover {
+  background: linear-gradient(135deg, #FF007F 0%, #FF1493 50%, #D81B60 100%);
+  box-shadow: 0 8px 25px rgba(255, 20, 147, 0.65), 0 0 15px rgba(255, 215, 0, 0.4);
+  transform: translateY(-2px);
+  color: #FFFFFF !important;
+}
+
+.btn-flashy-gold {
+  background: linear-gradient(135deg, #FFD700 0%, #FFF59D 45%, #FFA000 100%);
+  color: #3B001E !important;
+  font-weight: 800;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.5);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-flashy-gold:hover {
+  background: linear-gradient(135deg, #FFE082 0%, #FFD700 50%, #FF8F00 100%);
+  box-shadow: 0 8px 30px rgba(255, 215, 0, 0.75), 0 0 20px rgba(255, 20, 147, 0.3);
+  transform: translateY(-2px);
+  color: #2D0017 !important;
+}
